@@ -3,6 +3,8 @@ import { createContext, useContext, useState } from 'react';
 export const ThemeContext = createContext();
 
 export const useTheme = () => useContext(ThemeContext);
+// console.log(useTheme)
+
 
 export default function ThemeProvider({ children }) {
   const [themeName, setThemeName] = useState("day");
